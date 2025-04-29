@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nethi Venkata Dheeraj - Portfolio</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Sayyed Raheem</h1>
+                <p class="tagline">Developer & Business Analyst</p>
+            </div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Sayyed Raheem</h2>
+            <p>Looking for a role in an organization where I can upgrade my skills with time and take the organization to the next level.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="assets/raheem-profile.jpg" alt="Sayyed Raheem" class="profile-pic">
+            <div>
+                <p>Hello! I'm a passionate developer and business analyst with experience in mobile application development using Flutter and Firebase.</p>
+                <p>I have expertise in developing user-friendly applications with a focus on functionality and performance. I enjoy working in team environments, participating in code reviews, and contributing to application development.</p>
+                <p>Based in Hyderabad, India, I'm fluent in English, Telugu, and Hindi, and I'm committed to continuous learning and professional growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-entry">
+            <h3>B V Raju Institute of Technology, Narsapur</h3>
+            <p>B.Tech | Medak, India</p>
+            <p><em>2022 - 2026</em></p>
+            <p>GPA: 7.1/10.00</p>
+        </div>
+        <div class="education-entry">
+            <h3>Narayana Junior College, Kukatpally</h3>
+            <p>Intermediate | Hyderabad, India</p>
+            <p><em>2020 - 2022</em></p>
+            <p>Grade: 82.6%</p>
+        </div>
+        <div class="education-entry">
+            <h3>ST. Andrews School, Old Bowenpally</h3>
+            <p>Secondary Education (CBSE) | Hyderabad, India</p>
+            <p><em>2020</em></p>
+            <p>Grade: 92%</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <span class="skill-badge">Flutter</span>
+            <span class="skill-badge">Firebase</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">GitLab</span>
+            <span class="skill-badge">CI/CD Workflows</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Core Java</span>
+            <span class="skill-badge">Dart</span>
+            <span class="skill-badge">Firebase</span>
+            <span class="skill-badge">Oracle</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">Figma</span>
+            <span class="skill-badge">Lucid VS Code</span>
+            <span class="skill-badge">Android Studio</span>
+            <span class="skill-badge">Problem-solving</span>
+            <span class="skill-badge">Team Collaboration</span>
+            <span class="skill-badge">Time management</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+           <div class="project-grid">
+            <div class="project-card">
+                <img src="assets/hemlife homepage1.jpeg" alt="Hemlife App">
+                <h3>Hemlife App</h3>
+                <p>An app designed for blood donation and transfusion services. Allows donors to access available blood requests, and blood banks to submit request forms through the platform.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <img src="assets/smartcart app.png" alt="SmartCart App">
+                <h3>SmartCart App</h3>
+                <p>An innovative shopping cart system using AI for product recognition and AR for enhanced shopping experience.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> <a href="tel:+919677907669">+91-6303554891</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:nethivenkatadheera@gmail.com">sayyedraheem994@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana - 500062, India</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/raheem-sayyed" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sayyed Raheem. All rights reserved.</p>
+    </footer>
+
+    <!-- Updated JavaScript for smooth scrolling and active navigation highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            // Add click event listener to each navigation link
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default anchor behavior
+                    
+                    // Get the target section id from the href attribute
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    // Calculate position to scroll to (accounting for fixed header)
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - headerHeight;
+                    
+                    // Smooth scroll to the target section
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update active class
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Update active class based on scroll position
+            window.addEventListener('scroll', function() {
+                let current = '';
+                const sections = document.querySelectorAll('section');
+                const headerHeight = document.querySelector('header').offsetHeight;
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 100; // Added offset for better detection
+                    const sectionHeight = section.clientHeight;
+                    
+                    if(window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+            
+            // Set Home as active by default
+            if (window.location.hash === '') {
+                const homeLink = document.querySelector('a[href="#home"]');
+                if (homeLink) homeLink.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
