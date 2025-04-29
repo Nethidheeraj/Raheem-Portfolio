@@ -13,9 +13,14 @@
         <nav>
             <div class="logo">
                 <h1>Sayyed Raheem</h1>
-                <p class="tagline">Developer & Business Analyst</p>
+                <p class="tagline">Developer</p>
             </div>
-            <ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
@@ -76,19 +81,16 @@
             <span class="skill-badge">JavaScript</span>
             <span class="skill-badge">Git</span>
             <span class="skill-badge">GitHub</span>
-            <span class="skill-badge">GitLab</span>
-            <span class="skill-badge">CI/CD Workflows</span>
-            <span class="skill-badge">C++</span>
+
+            
             <span class="skill-badge">Python</span>
             <span class="skill-badge">Core Java</span>
             <span class="skill-badge">Dart</span>
-            <span class="skill-badge">Firebase</span>
-            <span class="skill-badge">Oracle</span>
+            
             <span class="skill-badge">PostgreSQL</span>
-            <span class="skill-badge">MySQL</span>
+            
             <span class="skill-badge">Figma</span>
-            <span class="skill-badge">Lucid VS Code</span>
-            <span class="skill-badge">Android Studio</span>
+            <span class="skill-badge">VS Code</span>
             <span class="skill-badge">Problem-solving</span>
             <span class="skill-badge">Team Collaboration</span>
             <span class="skill-badge">Time management</span>
@@ -189,6 +191,25 @@
                 const homeLink = document.querySelector('a[href="#home"]');
                 if (homeLink) homeLink.classList.add('active');
             }
+            
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.classList.toggle('no-scroll');
+            });
+            
+            // Close mobile menu when clicking on a nav link
+            document.querySelectorAll('.nav-menu li a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                });
+            });
         });
     </script>
 </body>
